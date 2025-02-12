@@ -8,6 +8,9 @@ body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 #bg{
@@ -15,16 +18,32 @@ body{
     width: 100%;
     background: url("/bg_image.webp");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1{
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     font-family: system-ui;
     font-weight: 700;
     font-size: 150px;
     color: white;
     mix-blend-mode: difference;
+}
+
+#btn {
+    padding: 15px 20px;
+    font-family: system-ui;
+    font-size: 1.8rem;
+    background: radial-gradient(black, purple, purple, rgb(31, 29, 29), purple, purple, black);
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;
 }
